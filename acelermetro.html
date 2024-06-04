@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Acelerómetro | Computación y Robótica - 2º ESO - MASCOTA CON MICRO:BIT </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="D. Antonio Muñoz Pancorbo y D. José María Beltrán Gómez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-25"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Computación y Robótica - 2º ESO - MASCOTA CON MICRO:BIT</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Mascota con Micro:bit</a></li>
+   <li><a href="gua_didctica.html" class="no-ch">Guía didáctica</a></li>
+   <li><a href="ideas_previas.html" class="daddy">Ideas previas</a>
+   <ul class="other-section">
+      <li><a href="curiosidades_de_microbit.html" class="no-ch">Curiosidades de Micro:bit</a></li>
+      <li><a href="entorno_de_programacin_makecode.html" class="no-ch">Entorno de Programación: Makecode</a></li>
+      <li><a href="subir_programa_a_microbit.html" class="no-ch">Subir programa a Micro:bit</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="tareas.html" class="current-page-parent daddy">Tareas</a>
+   <ul>
+      <li><a href="matriz_led.html" class="no-ch">Matriz LED</a></li>
+      <li><a href="pulsadores.html" class="no-ch">Pulsadores</a></li>
+      <li><a href="sensor_de_luz.html" class="no-ch">Sensor de Luz</a></li>
+      <li id="active"><a href="acelermetro.html" class="active no-ch">Acelerómetro</a></li>
+   </ul>
+   </li>
+   <li><a href="proyecto_final.html" class="no-ch">Proyecto Final</a></li>
+   <li><a href="referencias_bibliogrficas.html" class="no-ch">Referencias bibliográficas</a></li>
+   <li><a href="autora_y_licencia.html" class="no-ch">Autoría y licencia</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="sensor_de_luz.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="proyecto_final.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Acelerómetro</h1></header>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id44">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta44_131_2" class="block iDevice_content">
+<div class="pbl-task-description"><p>Crear un programa que inicie el proceso mostrando en la matriz LED el número 0.</p>
+<p>Cada vez que muevas la placa micro:bit debe de aumentar en uno su valor. Es decir, cada sacudida suma 1 al valor anterior.</p>
+<p>Cuando llegue al número 9, la placa debe de mostrar un icono durante dos segundos.</p>
+<p>Después, iniciar de nuevo la cuenta en 0.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id45">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">¿Qué es un acelerómetro?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta45_132_2" class="block iDevice_content">
+<div class="exe-text"><p>Es un sensor que mide las aceleraciones de un cuerpo, la fuerza generada por una vibración o el cambio en el movimiento de un cuerpo.</p>
+<p>Este sensor lo podemos encontrar, por ejemplo, en los airbags de los automóviles. Cuando el automóvil frena de forma brusca, el sensor detecta una desaceleración fuerte, haciendo que se despliegue el airbag.</p>
+<p>También, es muy común, que se use para medir los pasos en los relojes de actividad o en un smartphone.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id46">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Un acelerómetro en Micro:bit</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta46_133_2" class="block iDevice_content">
+<div class="exe-text"><p>Micro:bit tiene un acelerómetro dispuesta en el siguiente lugar de la placa:</p>
+<figure class="exe-figure exe-image position-center license-custom" style="width: 844px;">
+<div class="figcaption header"><strong>Acelerómetro en la Micro:bit</strong></div>
+<img src="http://agrega.juntadeandalucia.es/taller/jbelgom340/02052021/ODE-6c16fa72-94e1-3911-a219-c0a63f1b9206/acelerometro.jpg" alt="Acelerómetro en la Micro:bit" title="Acelerómetro en la Micro:bit" width="844" height="633" />
+<figcaption class="figcaption"><span class="author">Fuente Propia</span>. <span class="title"><em>Acelerómetro en la Micro:bit</em></span> <span class="license"><span class="sep">(</span><span class="custom-license"><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)<br /></span></span><br /></span></figcaption>
+</figure></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id47">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Algunas ideas...</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta47_134_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>Un juego de respuestas al azar</strong></p>
+<p>Para ver cómo funciona el acelerómetro que incluye la placa Micro:bit se va a realizar un programa que emule un juego, de tal forma, que al mover la placa nos ofrezca una respuesta al azar a una determinada pregunta. Se baja en un juego de Mattel que se llamaba "Bola 8 mágica" y que apareció en 1946.</p>
+<p>Es un divertido proceso de predicción que responde a tus preguntas. Hazle a tu Micro:bit cualquier pregunta y te responderá más o menos claramente. </p>
+<p>Nos ofrecerá tres respuestas: un tic para decir Sí, una equis para decir No, y una cara neutra que nos indica que no está segura de la respuesta.</p>
+<p>Para que funciona de esta forma será necesario utilizar los siguientes bloques:</p>
+<ul>
+<li>Si agitado: Cuando Micro:bit es agitado ejecuta la secuencia de instrucciones.</li>
+<li>
+<figure class="exe-figure exe-image position-center license-CC0" style="width: 354px;">
+<div class="figcaption header"><strong>Bloque de Makecode</strong></div>
+<img src="acelerometro_movimientos.jpg" alt="Si agitado. Opciones" title="Opciones" width="354" height="301" />
+<figcaption class="figcaption"><span class="author">Fuente propia</span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure>
+</li>
+<li>Crear una variable "Pregunta".</li>
+<li>Establecer la Variable "Pregunta" como un número al azar entre 1 y 3.</li>
+<li>Condicional Si no. Dependiendo del valor (1, 2 ó 3) se ejecutará mostrar un icono u otro.</li>
+<li>Lógica =. Nos compara el valor de la variable Pregunta con 1, 2 y 3.</li>
+</ul>
+<figure class="exe-figure exe-image position-center license-CC0">
+<div class="figcaption header"><strong>Bloques programa acelerómetro</strong></div>
+<img src="http://agrega.juntadeandalucia.es/taller/jbelgom340/02052021/ODE-6c16fa72-94e1-3911-a219-c0a63f1b9206/bloques_acelerometro.jpg" alt="Bloques juego Bola 8" title="Bloques juego acelerómetro" width="844" height="448" />
+<figcaption class="figcaption"><span class="author">Fuente Propia</span>.<span> </span><span class="title"><em>Bloques programa acelerómetro</em></span><span> </span><span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="sensor_de_luz.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="proyecto_final.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_escolares_js.js"></script></body></html>
