@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Sensor de Luz | Computación y Robótica - 2º ESO - MASCOTA CON MICRO:BIT </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="D. Antonio Muñoz Pancorbo y D. José María Beltrán Gómez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-24"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Computación y Robótica - 2º ESO - MASCOTA CON MICRO:BIT</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Mascota con Micro:bit</a></li>
+   <li><a href="gua_didctica.html" class="no-ch">Guía didáctica</a></li>
+   <li><a href="ideas_previas.html" class="daddy">Ideas previas</a>
+   <ul class="other-section">
+      <li><a href="curiosidades_de_microbit.html" class="no-ch">Curiosidades de Micro:bit</a></li>
+      <li><a href="entorno_de_programacin_makecode.html" class="no-ch">Entorno de Programación: Makecode</a></li>
+      <li><a href="subir_programa_a_microbit.html" class="no-ch">Subir programa a Micro:bit</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="tareas.html" class="current-page-parent daddy">Tareas</a>
+   <ul>
+      <li><a href="matriz_led.html" class="no-ch">Matriz LED</a></li>
+      <li><a href="pulsadores.html" class="no-ch">Pulsadores</a></li>
+      <li id="active"><a href="sensor_de_luz.html" class="active no-ch">Sensor de Luz</a></li>
+      <li><a href="acelermetro.html" class="no-ch">Acelerómetro</a></li>
+   </ul>
+   </li>
+   <li><a href="proyecto_final.html" class="no-ch">Proyecto Final</a></li>
+   <li><a href="referencias_bibliogrficas.html" class="no-ch">Referencias bibliográficas</a></li>
+   <li><a href="autora_y_licencia.html" class="no-ch">Autoría y licencia</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="pulsadores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="acelermetro.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Sensor de Luz</h1></header>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id39">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea 1</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta39_126_2" class="block iDevice_content">
+<div class="pbl-task-description"><p>Crear un programa donde la matriz LED muestre un valor numérico del nivel de luz que existe en el entorno.</p>
+<p>Para ello, utiliza una fuente de luz externa, la luz ambiental y así como la oscuridad de tapar la placa con la mano.</p>
+<p>Captura los distintos valores.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id40">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea 2</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta40_127_2" class="block iDevice_content">
+<div class="pbl-task-description"><p>Realiza un programa que encienda completamente la matriz LED si existe oscuridad en el entorno.</p>
+<p>Asimismo, debe de apagarse cuando reciba la luz diurna.</p>
+<p>De este modo simulamos el funcionamiento de una farola dependiendo de la luminosidad exterior.</p>
+<p>Gradúa muy bien los valores para que no exista indeterminación de encendido o apagado, es decir, establece unos rangos de luminosidad muy definidos para el encendido y el apagado de la matriz.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id41">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">¿Qué es un Sensor de Luz?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta41_128_2" class="block iDevice_content">
+<div class="exe-text"><p>Es un componente o transductor electrónico que capta el nivel de luminosidad que existe en su entorno y así medir la cantidad de luz emitida por un objeto.</p>
+<p>Uno de los componentes electrónicos que se usa para tal fin son las LDR (Resistencias dependientes de la luz). Al aumentar la luminosidad baja la resistencia que ofrece al paso de la corriente eléctrica; y al reducirse la luminosidad aumenta su resistencia.</p>
+<p>Una de las aplicaciones más comunes la podemos encontrar en las farolas de las calles de nuestra localidad, al estar controladas por un sensor de luz, encendiéndose cuando la luminosidad disminuye (llegada de la noche) y, apagándose, cuando llega el día.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id42">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Sensor de Luz en Micro:bit</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta42_129_2" class="block iDevice_content">
+<div class="exe-text"><p>En la placa Micro:bit se puede encontrar este sensor en la misma matriz LED.</p>
+<figure class="exe-figure exe-image position-center license-CC0">
+<div class="figcaption header"><strong>Sensor de luz en Micro:bit</strong></div>
+<img src="http://agrega.juntadeandalucia.es/taller/jbelgom340/02052021/ODE-6c16fa72-94e1-3911-a219-c0a63f1b9206/sensor_de_luz.jpg" alt="Sensor de luminosidad en la Micro:bit" title="Sensor de luz en Micro:bit" width="844" height="633" />
+<figcaption class="figcaption"><span class="author">Fuente Propia</span>.<span> </span><span class="title"><em>Sensor de luz en Micro:bit</em></span><span> </span><span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id43">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Algunas ideas...</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta43_130_2" class="block iDevice_content">
+<div class="exe-text"><p>Dependiendo del nivel de luminosidad existente en el entorno, Micro:bit debe de mostrar en su matriz LED una imagen u otra.</p>
+<p>Por ejemplo:</p>
+<ul>
+<li>Para un nivel bajo: mostrar un punto en el centro.</li>
+<li>Para un nivel medio: mostrar un cuadrado.</li>
+<li>Para un nivel alto: toda la matriz LED estará encencida.</li>
+</ul>
+<p>Para llevar a cabo este proyecto, debemos de emplear los siguientes bloques:</p>
+<ul>
+<li>Para siempre: Ejecuta, de forma indefinida, las instrucciones dentro de este evento.</li>
+<li>Condicional Si: Si se cumple una condición ejecuta una determinada instrucción.</li>
+<li>Comparación: Compara dos valores</li>
+<li>Nivel de luz: Actúa el sensor de luz para determinar la luminosidad del entorno.</li>
+<li>Matriz LED: Representa una figura determinada.</li>
+<li>Lógica: Establece la unión de dos valores con la conjunción "Y" o "AND".</li>
+</ul>
+<figure class="exe-figure exe-image position-center license-CC0">
+<div class="figcaption header"><strong>Bloques programa medidor luminosidad</strong></div>
+<img src="http://agrega.juntadeandalucia.es/taller/jbelgom340/02052021/ODE-6c16fa72-94e1-3911-a219-c0a63f1b9206/bloques_medidor_luminosidad.jpg" alt="Bloques programa medidor luminosidad" title="Bloques programa medidor luminosidad" width="844" height="377" />
+<figcaption class="figcaption"><span class="author">Fuente Propia</span>.<span> </span><span class="title"><em>Bloques programa medidor luminosidad</em></span><span> </span><span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p>Makecode nos ofrece un bloque denominado "plot bar graph" que ejecuta una consola donde se puede visualizar, gráficamente, la variación en tiempo real de los valores de una determinada variable (en este caso, del nivel de luminosidad).</p>
+<p>El bloque que se utilizaría, integrado en un programa, es el siguiente:</p>
+<figure class="exe-figure exe-image position-center license-CC0">
+<div class="figcaption header"><strong>Bloque gráfica nivel de luminosidad</strong></div>
+<img src="http://agrega.juntadeandalucia.es/taller/jbelgom340/02052021/ODE-6c16fa72-94e1-3911-a219-c0a63f1b9206/bloque_grafica_nivel_luminosidad.jpg" alt="Bloque gráfica nivel de luminosidad" title="Bloque grafica nivel de luminosidad" width="844" height="318" />
+<figcaption class="figcaption"><span class="author">Fuente Propia</span>.<span> </span><span class="title"><em>Bloque gráfica nivel de luminosidad</em></span><span> </span><span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p>El resultado que obtendríamos, tras la ejecución de este programa, sería:</p>
+<figure class="exe-figure exe-image position-center license-CC0">
+<div class="figcaption header"><strong>Gráfica nivel luminosidad Micro:bit</strong></div>
+<img src="http://agrega.juntadeandalucia.es/taller/jbelgom340/02052021/ODE-6c16fa72-94e1-3911-a219-c0a63f1b9206/grafica_nivel_luminosidad_microbit.jpg" alt="Gráfica nivel luminosidad Micro:bit" title="Gráfica nivel luminosidad Micro:bit" width="843" height="346" />
+<figcaption class="figcaption"><span class="author">Fuente Propia</span>.<span> </span><span class="title"><em>Gráfica nivel luminosidad Micro:bit</em></span><span> </span><span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="pulsadores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="acelermetro.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_escolares_js.js"></script></body></html>

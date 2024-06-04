@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Pulsadores | Computación y Robótica - 2º ESO - MASCOTA CON MICRO:BIT </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="D. Antonio Muñoz Pancorbo y D. José María Beltrán Gómez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-23"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Computación y Robótica - 2º ESO - MASCOTA CON MICRO:BIT</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Mascota con Micro:bit</a></li>
+   <li><a href="gua_didctica.html" class="no-ch">Guía didáctica</a></li>
+   <li><a href="ideas_previas.html" class="daddy">Ideas previas</a>
+   <ul class="other-section">
+      <li><a href="curiosidades_de_microbit.html" class="no-ch">Curiosidades de Micro:bit</a></li>
+      <li><a href="entorno_de_programacin_makecode.html" class="no-ch">Entorno de Programación: Makecode</a></li>
+      <li><a href="subir_programa_a_microbit.html" class="no-ch">Subir programa a Micro:bit</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="tareas.html" class="current-page-parent daddy">Tareas</a>
+   <ul>
+      <li><a href="matriz_led.html" class="no-ch">Matriz LED</a></li>
+      <li id="active"><a href="pulsadores.html" class="active no-ch">Pulsadores</a></li>
+      <li><a href="sensor_de_luz.html" class="no-ch">Sensor de Luz</a></li>
+      <li><a href="acelermetro.html" class="no-ch">Acelerómetro</a></li>
+   </ul>
+   </li>
+   <li><a href="proyecto_final.html" class="no-ch">Proyecto Final</a></li>
+   <li><a href="referencias_bibliogrficas.html" class="no-ch">Referencias bibliográficas</a></li>
+   <li><a href="autora_y_licencia.html" class="no-ch">Autoría y licencia</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="matriz_led.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="sensor_de_luz.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Pulsadores</h1></header>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id35">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta35_122_2" class="block iDevice_content">
+<div class="pbl-task-description"><p><span>Crear un programa que muestre en la matriz LED una animación diferente según se presione el pulsador A, el pulsador B y los dos pulsadores A y B. </span></p>
+<p><span>Si dispones de la placa Micro:bit v2, además, crea una animación al pulsar sobre el logotipo de Micro:bit.</span></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id36">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">¿Qué son pulsadores?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta36_123_2" class="block iDevice_content">
+<div class="exe-text"><p>Los pulsadores son elementos de control en un circuito eléctrico.</p>
+<p>En este caso, se van a utilizar como sensores de entrada. Cierra el circuito y permite el paso de corriente eléctrica durante el tiempo que permanece accionado o pulsado.</p>
+<p>Suele estar presente en la vida cotidiana, como por ejemplo, en los controles de las televisiones, ascensores, timbres, etc.</p>
+<p>En la placa Micro:bit son considerados dispositivos de entrada digitales, puesto que los valores que pueden tener son 0, cuando no están accionados, y 1, cuando se encuentran pulsados.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id37">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Pulsadores en Micro:bit</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta37_124_2" class="block iDevice_content">
+<div class="exe-text"><div class="figcaption header"><strong>Pulsadores en la placa Micro:bit</strong></div>
+<p><img src="http://agrega.juntadeandalucia.es/taller/jbelgom340/02052021/ODE-6c16fa72-94e1-3911-a219-c0a63f1b9206/pulsadores.jpg" alt="Pulsadores en la Micro:bit" title="Pulsadores en la Micro:bit" width="844" height="633" /></p>
+<p><span class="author">Fuente Propia</span>.<span> </span><span class="title"><em>Pulsadores en la Micro:bit</em></span><span> </span><span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></p>
+<p>En el caso de la versión 2, el logotipo de Micro:bit es un pulsador táctil, al cuál le podemos asociar un programa o una determinada función.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id38">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Algunas ideas...</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta38_125_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>¿Cómo te sientes?</strong></p>
+<ul>
+<li>En esta práctica, se va a realizar un programa que nos diga como se siente la persona que acciona la placa.</li>
+<li>Si pulsa el botón A, mostrará una cara feliz.</li>
+<li>Si pulsa el botón B, mostrará un cara triste.</li>
+</ul>
+<p>Se utilizarán los siguientes bloques:</p>
+<ul>
+<li>Al presionar el botón. Es un evento que ejecuta las instrucciones que existen dentro de su bloque si se da la circunstancia de que se pulsa el botón indicado en el mismo.</li>
+<li>Mostrar icono: nos permite seleccionar el icono correspondiente en cada caso, según se sienta feliz o triste.</li>
+</ul>
+<figure class="exe-figure exe-image position-center license-CC0">
+<div class="figcaption header"><strong>Bloques Programa utilizando Pulsadores</strong></div>
+<img src="http://agrega.juntadeandalucia.es/taller/jbelgom340/02052021/ODE-6c16fa72-94e1-3911-a219-c0a63f1b9206/bloques_pulsadores.jpg" alt="Bloques programa pulsadores" title="Bloques programa pulsadores" width="844" height="622" />
+<figcaption class="figcaption"><span class="author">Fuente Propia</span>.<span> </span><span class="title"><em>Bloques programa Pulsadores</em></span><span> </span><span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p>El resultado final, al ejecutar este programa, sería:</p>
+<figure class="exe-figure exe-image position-center license-CC0">
+<div class="figcaption header"><strong>Resultado bloques pulsadores</strong></div>
+<img src="http://agrega.juntadeandalucia.es/taller/jbelgom340/02052021/ODE-6c16fa72-94e1-3911-a219-c0a63f1b9206/bloques_pulsadores_resultado.jpg" alt="Resultado de la ejecución del programa" title="Resultado bloques pulsadores" width="843" height="306" />
+<figcaption class="figcaption"><span class="author">Fuente Propia</span>.<span> </span><span class="title"><em>Resultado bloques pulsadores</em></span><span> </span><span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="matriz_led.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="sensor_de_luz.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_escolares_js.js"></script></body></html>

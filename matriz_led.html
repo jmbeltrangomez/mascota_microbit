@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Matriz LED | Computación y Robótica - 2º ESO - MASCOTA CON MICRO:BIT </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="D. Antonio Muñoz Pancorbo y D. José María Beltrán Gómez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-7"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Computación y Robótica - 2º ESO - MASCOTA CON MICRO:BIT</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Mascota con Micro:bit</a></li>
+   <li><a href="gua_didctica.html" class="no-ch">Guía didáctica</a></li>
+   <li><a href="ideas_previas.html" class="daddy">Ideas previas</a>
+   <ul class="other-section">
+      <li><a href="curiosidades_de_microbit.html" class="no-ch">Curiosidades de Micro:bit</a></li>
+      <li><a href="entorno_de_programacin_makecode.html" class="no-ch">Entorno de Programación: Makecode</a></li>
+      <li><a href="subir_programa_a_microbit.html" class="no-ch">Subir programa a Micro:bit</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="tareas.html" class="current-page-parent daddy">Tareas</a>
+   <ul>
+      <li id="active"><a href="matriz_led.html" class="active no-ch">Matriz LED</a></li>
+      <li><a href="pulsadores.html" class="no-ch">Pulsadores</a></li>
+      <li><a href="sensor_de_luz.html" class="no-ch">Sensor de Luz</a></li>
+      <li><a href="acelermetro.html" class="no-ch">Acelerómetro</a></li>
+   </ul>
+   </li>
+   <li><a href="proyecto_final.html" class="no-ch">Proyecto Final</a></li>
+   <li><a href="referencias_bibliogrficas.html" class="no-ch">Referencias bibliográficas</a></li>
+   <li><a href="autora_y_licencia.html" class="no-ch">Autoría y licencia</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="tareas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="pulsadores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Matriz LED</h1></header>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id31">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta31_118_2" class="block iDevice_content">
+<div class="pbl-task-description"><p>Realiza un programa que permita mostrar tu nombre completo (Nombre y Apellidos), seguido de una animación (libre elección) y, por último, un icono que te identifique o te guste mucho.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id32">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">¿Qué es una matriz LED?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta32_119_2" class="block iDevice_content">
+<div class="exe-text"><p>Es un display formado por un grupo de LED ubicados en forma de recuadro donde se puede mostrar imágenes, símbolos o letras, según se enciendan o apaguen los diodos emisores de luz.</p>
+<p>Dependiendo de la cantidad de LED que disponga nuestra matriz tendremos mayor o menor resolución. Cuanto mayor cantidad de diodos, mayor resolución y, por tanto, nitidez en las imágenes que se representan.</p>
+<p>Podemos ver este tipo de letreros en farmacias, autobuses, etc.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id33">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Matriz LED en Micro:bit</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta33_120_2" class="block iDevice_content">
+<div class="exe-text"><p>Micro:bit dispone de una matriz de 25 LED independientes de color rojo (5x5) que nos permitirá mostrar diferentes imágenes o textos de manera fácil haciendo uso de la programación.</p>
+<figure class="exe-figure exe-image position-center license-CC0">
+<div class="figcaption header"><strong>Matriz LED</strong></div>
+<img src="http://agrega.juntadeandalucia.es/taller/jbelgom340/02052021/ODE-6c16fa72-94e1-3911-a219-c0a63f1b9206/MATRIZ_LED.jpg" alt="Matriz LED" title="Matriz LED" width="512" height="384" />
+<figcaption class="figcaption"><span class="author">Fuente Propia</span>.<span> </span><span class="title"><em>Matriz LED</em></span><span> </span><span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id34">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Algunas ideas...</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta34_121_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>Para poder llevar a cabo la tarea propuesta, mira, prueba y experimenta con las siguientes prácticas. Descubrirás el camino que tienes que seguir para crear un programa que cumpla con los requisitos solicitados.</strong></p>
+<p><strong>Práctica 1: ¡Hola Mundo!</strong></p>
+<p>El primer código que se programa en cualquier lenguaje se denomina "Hola Mundo".</p>
+<p>Por eso, nuestro primer programa va tratar de mostrar en la matriz LED la secuencia de letras que conforman "HOLA MUNDO".</p>
+<p>Para hacerlo, necesitaremos dos bloques:</p>
+<ul>
+<li>Para Siempre: que ejecuta, una y otra vez, has que la placa se apague..</li>
+<li>Mostrar Cadena: este bloque muestra en la matriz LED la cadena de caracteres que se escriba en el espacio en blanco entre comillas.</li>
+</ul>
+<figure class="exe-figure exe-image position-center license-CC0">
+<div class="figcaption header"><strong>Bloques hola mundo</strong></div>
+<img src="http://agrega.juntadeandalucia.es/taller/jbelgom340/02052021/ODE-6c16fa72-94e1-3911-a219-c0a63f1b9206/bloques_hola_mundo.jpg" alt="bloques programa hola mundo" title="bloques hola mundo" width="840" height="167" />
+<figcaption class="figcaption"><span class="author">Fuente Propia</span>.<span> </span><span class="title"><em>hola mundo</em></span><span> </span><span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p><strong>Práctica 2: Animaciones</strong></p>
+<p>Micro:bit nos ofrece la posibilidad de crear "animaciones" alternando diversas imágenes que aparecerán en la matriz LED de una manera ordenada, consiguiendo una ilusión visual de movimiento.</p>
+<p>Para su programación utilizaremos los siguientes bloques:</p>
+<ul>
+<li>Para Siempre: Ejecuta la secuencia de instrucciones de forma indefinida.</li>
+<li>Mostrar Icono: Se elige aquel que queramos mostrar.</li>
+<li>Pausa (ms): Elegimos una pausa de 100ms antes de cambiar al siguiente icono.</li>
+<li>Mostrar icono: Elegimos el siguiente icono.</li>
+<li>Pausa (ms)</li>
+</ul>
+<figure class="exe-figure exe-image position-center license-CC0">
+<div class="figcaption header"><strong>Bloques animación</strong></div>
+<img src="http://agrega.juntadeandalucia.es/taller/jbelgom340/02052021/ODE-6c16fa72-94e1-3911-a219-c0a63f1b9206/bloques_animacion.jpg" alt="Bloques animación" title="Bloques animación" width="840" height="349" />
+<figcaption class="figcaption"><span class="author">Fuente Propia</span>.<span> </span><span class="title"><em>Bloques animación</em></span><span> </span><span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p><strong>Práctica 3: Mostrar un icono</strong></p>
+<p>Otra posibilidad que nos ofrece Micro:bit y Makecode es mostrar un icono en la pantalla. La única limitación es nuestra propia creatividad y el número de LED's de la matriz.</p>
+<p>Necesitamos dos bloques:</p>
+<ul>
+<li>Al Iniciar: Ejecuta la secuencia de instrucciones cuando encendemos la placa Micro:bit o Reseteamos.</li>
+<li>Mostrar LED's: En la pantalla que nos ofrece, hacemos clic en los píxeles y obtenemos la imagen que se mostrará posteriormente.</li>
+</ul>
+<figure class="exe-figure exe-image position-center license-CC0">
+<div class="figcaption header"><strong>Bloques Icono</strong></div>
+<img src="http://agrega.juntadeandalucia.es/taller/jbelgom340/02052021/ODE-6c16fa72-94e1-3911-a219-c0a63f1b9206/bloques_icono.jpg" alt="Bloques Icono" title="Bloques Icono" width="840" height="395" />
+<figcaption class="figcaption"><span class="author">Fuente Propia</span>.<span> </span><span class="title"><em>Bloques Icono</em></span><span> </span><span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p><strong>Práctica 4: Datos</strong></p>
+<p>Como última opción que se va a estudiar, es mostrar números, que bien puede ser el valor de la temperatura, una operación matemáticas, un número elegido al azar, etc.</p>
+<p>Los bloques necesarios son:</p>
+<ul>
+<li>Para Siempre: Ejecuta las secuencia de instrucciones de forma indefinida.</li>
+<li>Mostrar Cadena: Muestra una cadena de caracteres que se encuentra en la zona blanca.</li>
+<li>Escoger al azar: Se ponen los valores del intervalo.</li>
+</ul>
+<figure class="exe-figure exe-image position-center license-CC0">
+<div class="figcaption header"><strong>Bloques de datos</strong></div>
+<img src="http://agrega.juntadeandalucia.es/taller/jbelgom340/02052021/ODE-6c16fa72-94e1-3911-a219-c0a63f1b9206/bloques_datos.jpg" alt="bloques para el programa de datos" title="Bloques de datos" width="839" height="310" />
+<figcaption class="figcaption"><span class="author">Fuente Propia</span>.<span> </span><span class="title"><em>Bloques de datos</em></span><span> </span><span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="tareas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="pulsadores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_escolares_js.js"></script></body></html>
